@@ -1,0 +1,23 @@
+.ino
+#include <Ultrasonic.h> //Incluindo a biblioteca do ultrasonic
+//trigger 12
+//echo 13
+// vcc 5v
+//gnd gnd
+Ultrasonic ultrasonic(12, 13);  //trigger,echo 
+int distancia;
+
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(9600); 
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+distancia = ultrasonic.read();
+Serial.print ("Distancia em CM: ");
+Serial.println (distancia);
+delay(1000);
+
+
+}
