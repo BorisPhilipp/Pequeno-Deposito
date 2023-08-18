@@ -1,1 +1,30 @@
+//Robotica ligar led ao ficar escuro
 
+const int pinLDR = A0;
+const int pinLED = 7
+
+
+void setup() {
+pinMode(pinLDR, INPUT);
+pinMode(pinLED, OUTPUT);
+Serial.begin(9600);
+}
+
+void loop() {
+int leituraLDR = analogRead(pinLDR);
+if(leituraLDR > 1000){
+  Serial.print("\nAlto ->");
+  Serial.print(leituraLDR);
+  digitalWrite(pinLED, LOW);
+} else if (leituraLDR > 500 && leituraLDR < 1000){
+  Serial.print("\nMédio ->");
+  Serial.print(leituraLDR);
+}else if(leituraLDR > 1 && leituraLDR < 500){
+  digitalWrite(pinLED, HIGH);
+  Serial.print("\nBaixo ->");
+  Serial.print(leituraLDR);
+}else {
+  Serial.print("\nDesligado");
+}
+delay(500);
+}
