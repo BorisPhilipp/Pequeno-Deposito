@@ -1,4 +1,4 @@
-CMD = str(input("Prompt de Comando - Digite: "))
+CMD = str(input("Prompt de Comando - Digite seu Comando: "))
 
 addComandos = []
 verif = 0
@@ -29,7 +29,7 @@ while True:
             if len(addComandos) != 0:
                 print(f"Comandos: {addComandos}")
             else:
-                print("Sem comandos para resp") 
+                print("Sem comandos para apagar.") 
         else:
             break
     else:
