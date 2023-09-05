@@ -5,4 +5,4 @@ Atividades de Engenharia de Software
 
 ============================================================================================
 
-Feito para Arquivar coisa que fiz 
+Feito para Arquivar Projetos e Atividade que fiz ao longo da Engenharia de Software
