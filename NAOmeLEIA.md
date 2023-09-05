@@ -1,5 +1,6 @@
 # Pequeno-Deposito
 Atividades de Engenharia de Software
+============================================================================================
 
 ![image](https://giffiles.alphacoders.com/360/36032.gif)
 
