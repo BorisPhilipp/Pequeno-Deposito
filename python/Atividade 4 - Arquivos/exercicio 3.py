@@ -20,7 +20,7 @@ def copiar(arquivoOriginal, arquivoCopiado):
     original.close()
     copiado.close()
 
-copiar("arquivoOriginal.txt", "arquivoCopiado.txt")
+copiar("3 - arquivoOriginal.txt", "3 - arquivoCopiado.txt")
 
 
 
