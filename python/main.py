@@ -1,49 +1,11 @@
-'''
-Operadores Aritméticos
-Adição -> +
-Subtração -> -
-Multiplicação -> *
-Divisão -> /
-Exponenciação -> **
-Parte Inteira -> //
-Módulo -> %
-'''
+from Cachorro import Cachorro
+from Gato import Gato
 
-#Entrada e Saida
-print("Digite seu nome:")
-nome = input()
-print("Bem-Vindo(a), ", nome)
-PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
-'''
-Operadores de Comparação
-== -> Igualdade
-!= - Diferente
-> -> Maior
-< -> Menor
-<= -> menor ou Igual
-'''
+c1 = Cachorro("Byte", "Chihuahua")
+g1 = Gato("Get","Cinza")
 
-#Estruturas condicionais Simples
-a = 6
-b = 4
-soma = a + b
+c1.emitirSom()
+g1.emitirSom()
 
-if soma > 10 :
-    print("O valor da soma é: ",soma)
-else:
-    print("valor falso do teste")
-
-'''
-Operadores Lógicos
-AND -> e 
-OR -> ou
-NOT -> não
-'''
-
-x = 3.5
-y = 1.2
-
-if y < x and x > 3:
-    print("as duas condições são verdadeiras")
-else:
-    print("pelo menos uma condição ou as duas são falsa")
+c1.buscar()
+g1.arranhar()
