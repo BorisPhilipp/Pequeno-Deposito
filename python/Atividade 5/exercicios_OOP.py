@@ -26,6 +26,7 @@ print(f'{moto2._velocidade}km')
 print(" ")
 
 #4
+moto1.Descricao()
 
 
 
