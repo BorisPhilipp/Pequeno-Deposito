@@ -16,6 +16,7 @@ distancia = ultrassom.read(CM);
 if (distancia < 20){
 digitalWrite(rele, HIGH);
 buzzerTocar();
+delay(500);
 }
 }
 
